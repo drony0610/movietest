@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route, Outlet, HashRouter } from "react-router-d
 function App() {
   return (
     <div className="MainApp">
-      <HashRouter>
+      <BrowserRouter>
       <Menu/>
         <Routes>
           <Route path="/" element={<Home/>}/>
@@ -15,7 +15,7 @@ function App() {
           <Route path="/history" element={<Outlet/>}/>
           <Route path="/settings" element={<Outlet/>}/>
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }
